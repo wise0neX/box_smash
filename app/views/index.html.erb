@@ -1,0 +1,8 @@
+<h1>My New Index Page</h1>
+<p>Some text here.</p>
+<% form_tag search_page/Index, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>

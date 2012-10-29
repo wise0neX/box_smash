@@ -2,8 +2,11 @@ BoxSmash::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
+
   get "search/test"
   post "search/do_test/"
+
+  root :controller=>'search_page', :action=>'index'
   
   
   
