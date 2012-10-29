@@ -1,1 +1,9 @@
-You submitted <%= @value %>: results: <%= @tweets[0].text %>
+You submitted <%= @value %>: results:
+
+<p>
+  <ul>
+    <% @tweets.each do |item| %>
+       <li><%= item.text %></li>
+       <% end %>
+  </ul>
+</p>
